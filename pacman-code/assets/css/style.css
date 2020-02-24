@@ -1,0 +1,206 @@
+body{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.highScore{
+    zoom: 67%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.table{
+    height: 900px;
+    width: 300px;
+    border: 15px solid deeppink;
+    border-radius: 15px;
+
+}
+.logo{
+
+}
+.map {
+    zoom: 67%;
+    background-color: #0b0b0b;
+
+    width: 1000px;
+
+    height: 1000px;
+
+    position: relative;
+
+}
+.info{
+    zoom: 67%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+
+}
+
+.controls{
+
+}
+.score{
+    display: flex;
+    font-family: "Open Sans",sans-serif;
+    font-size: 40px;
+    color: black;
+    border: 15px solid deepskyblue;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nG{
+    position: absolute;
+    left: 1735px;
+    top: 900px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 40px;
+    color: white;
+    border: 15px solid limegreen;
+    background-color: limegreen;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+}
+img[src="assets/images/pacman.gif"] {
+
+    position: absolute;
+
+    top: 500px;
+
+    left: 500px;
+
+}
+
+img[src="assets/images/redghost.png"] {
+
+    position: absolute;
+
+    top: 300px;
+
+    left: 400px;
+
+    width: 100px;
+
+}
+
+img[src="assets/images/pinkghost.png"] {
+
+    position: absolute;
+
+    top: 300px;
+
+    left: 500px;
+
+    width: 100px;
+
+}
+
+img[src="assets/images/blueghost.png"] {
+
+    position: absolute;
+
+    top: 300px;
+
+    left: 600px;
+
+    width: 100px;
+
+}
+
+img[src="assets/images/background.svg"] {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 1000px;
+
+    height: 1000px;
+
+}
+
+img[src="assets/images/Background2.svg"] {
+
+    position: absolute;
+
+    z-index: 30;
+
+    top: 0;
+
+    left: 0;
+
+    width: 1000px;
+
+    height: 1000px;
+
+}
+
+.dot {
+
+    position: absolute;
+
+    width: 100px;
+
+    height: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: transparent;
+
+}
+
+.dot::before {
+
+    content: "";
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: #ff6;
+
+}
+
+.toLeft {
+
+    transform: none;
+
+}
+
+.toTop {
+
+    transform: rotate(90deg);
+
+}
+
+.toRight {
+
+    transform: scale(-1, 1);
+
+}
+
+.toBottom {
+
+    transform: rotate(-90deg);
+
+}
