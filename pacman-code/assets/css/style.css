@@ -73,6 +73,27 @@ body{
     height: 100px;
     border-radius: 15px;
 }
+
+.Input{
+    height: 300px;
+    width: 500px;
+    background-color: #0b0b0b;
+    border: 15px solid deepskyblue;
+    border-radius: 20px;
+    position: absolute;
+    top: 50;
+    left: 50;
+    z-index: 400;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
 img[src="assets/images/pacman.gif"] {
 
     position: absolute;

@@ -4,6 +4,8 @@ const map = document.querySelector('.map');
 const blueGhost = document.querySelector('img[src="assets/images/blueghost.png"]');
 const pinkGhost = document.querySelector('img[src="assets/images/pinkghost.png"]');
 const redGhost = document.querySelector('img[src="assets/images/redghost.png"]');
+const submit = document.querySelector('input[type="submit"]');
+const inputName = document.querySelector('input[type="text"]');
 
 let score = 0;
 
@@ -14,6 +16,7 @@ let blueGhostInterval;
 let pinkGhostInterval;
 
 let currentRedGhostDirection;
+let userName;
 
 const directions = ['toLeft','toRight','toTop','toBottom'];
 
@@ -362,7 +365,6 @@ const start = () => {
     displayDots();
 };
 
-start();
 
 addEventListener('keydown', e => {
 
@@ -447,5 +449,24 @@ const isTheCharacterBlocked = (characterPositon, movingDirection) => {
     })
 
 };
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(inputName.value.length <= 3){
+        alert("Votre username contient moins 3 caractères");
+    }
+    else {
+        start()
+    }
+
+});
+
+function hideForm (){
+    if ( userName = inputName.value.length >=3 ){
+
+        document.getElementById("Input").style.display = "none";
+
+    }
+}
 
 
