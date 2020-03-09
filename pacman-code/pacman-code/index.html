@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="fr-FR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Vanilla Pac-Man</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+    <body>
+    <section class="highScore">
+        <div class="logo">
+            <img src="assets/images/pacman-logo.png" width="385" height="205" alt="logo Pacman">
+        </div>
+        <div class="table" id="HighScore"></div>
+    </section>
+
+    <section class="Game">
+        <div class="map">
+
+            <img src="assets/images/pacman.gif" alt="Pac-Man">
+            <img src="assets/images/redghost.png" alt="red-Ghost">
+            <img src="assets/images/pinkghost.png" alt="pink-Ghost">
+            <img src="assets/images/blueghost.png" alt="blue-ghost">
+            <img src="assets/images/background.svg" alt="Labyrinthe">
+            <img src="assets/images/Background2.svg" alt="Labyrinthe2">
+
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="score">
+            <div class="dott"></div>
+            <p id="score">0</p>
+        </div>
+        <img class="controls" src="assets/images/controls.png" width="300" height="217" alt="">
+        <button class="nG"><a href="index.html">NEW GAME</a></button>
+    </section>
+
+    <div class="Input" id="Input">
+        <img src="assets/images/pacman-logo.png" width="385" height="205" alt="logo Pacman">
+        <input type="text" id="name" name="name" placeholder="Username">
+        <input class="play" type="submit" value="JOUER" onclick="hideForm()">
+        <img class="ghost" src="assets/images/inputghost.png" alt="ghost">
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
